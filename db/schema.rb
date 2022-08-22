@@ -17,12 +17,14 @@ ActiveRecord::Schema.define(version: 2022_08_22_161210) do
     t.string "image"
     t.integer "release_date"
     t.integer "rating"
+    t.string "genre"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.integer "movie_id"
     t.integer "user_id"
     t.string "comment"
+    t.integer "rating"
   end
 
   create_table "users", force: :cascade do |t|

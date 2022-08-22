@@ -34,6 +34,9 @@ gem "sqlite3", "~> 1.4"
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
+gem "faker"
+gem 'activerecord-reset-pk-sequence'
+
 
 
 # These gems will only be used when we are running the application locally
