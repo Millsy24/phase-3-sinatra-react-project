@@ -9,7 +9,7 @@ Review.reset_pk_sequence
 
 m1 = Movie.create( 
     title: 'Harry Potter and the Goblet of Fire',
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/2/2c/Goblet_of_Fire_Film_Poster.jpg/revision/latest?cb=20140817011104',
+    image: 'https://m.media-amazon.com/images/I/71opdcUCGjL.jpg',
     release_date: 2005,
     rating: nil,
     genre: 'Fantasy'
