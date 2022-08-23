@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
 
-   get "/" do
+  get "/" do
      movies = Movie.all
      movies.to_json(include: { reviews: {include: :user} })     
    end
