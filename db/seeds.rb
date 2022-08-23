@@ -11,91 +11,78 @@ m1 = Movie.create(
     title: 'Harry Potter and the Goblet of Fire',
     image: 'https://m.media-amazon.com/images/I/71opdcUCGjL.jpg',
     release_date: 2005,
-    rating: nil,
     genre: 'Fantasy'
 )
 m2 = Movie.create( 
     title: 'The Hobbit',
     image: 'https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/86974/86527/the_hobbit_the_desolution_of_smaug__final_poster_buy_original_movie_posters_at_starstills__35272__21743.1394515789.jpg?c=2?imbypass=on',
     release_date: 2012 ,
-    rating: nil,
     genre: 'Fantasy'
 )
 m3 = Movie.create( 
     title: 'Predator',
     image: 'https://m.media-amazon.com/images/I/81dIAf+VrcL._AC_SL1500_.jpg',
     release_date: 1987,
-    rating: nil,
     genre: 'Horror'
 )
 m4 = Movie.create( 
     title: 'Perfume',
     image: 'https://m.media-amazon.com/images/M/MV5BMTg2Mzk2NjkzNl5BMl5BanBnXkFtZTYwMzIzOTc2._V1_FMjpg_UX1000_.jpg',
     release_date: 2006,
-    rating: nil,
     genre: 'Thriller'
 )
 m5 = Movie.create( 
     title: 'The SpongeBob SquarePants Movie ',
     image: 'https://i.etsystatic.com/30490360/r/il/ccd73f/3914735025/il_570xN.3914735025_ilrr.jpg',
     release_date: 2004,
-    rating: nil,
     genre: 'Comedy' 
 )
 m6 = Movie.create( 
     title: 'Blade Runner',
     image: 'https://m.media-amazon.com/images/I/51bBVaOu5VL._AC_.jpg',
     release_date: 1982,
-    rating: nil,
     genre: 'Science Fiction'
 )
 m7 = Movie.create( 
     title: 'Jaws The Revenge',
     image: 'https://static.tvtropes.org/pmwiki/pub/images/rsz_ssdizt0ittuaadhovrxrelo7q1a_7014.jpg',
     release_date: 1987,
-    rating: nil,
     genre: 'Horror'
 )
 m8 = Movie.create( 
     title: 'The Rise of Skywalker',
     image: 'https://lumiere-a.akamaihd.net/v1/images/star-wars-the-rise-of-skywalker-theatrical-poster-1000_ebc74357.jpeg?region=0%2C0%2C891%2C1372',
     release_date: 2019 ,
-    rating: nil,
     genre: 'Science Fiction'
 )
 m9 = Movie.create( 
     title: 'Free Guy',
     image: 'https://lumiere-a.akamaihd.net/v1/images/p_20cs_freeguy_homeent_21930_49e74453.jpeg',
     release_date: 2021,
-    rating: nil,
     genre: 'Comedy'
 )
 m10 = Movie.create( 
     title: 'The Room',
     image: 'https://upload.wikimedia.org/wikipedia/en/e/e1/TheRoomMovie.jpg',
     release_date: 2003,
-    rating: nil,
     genre: 'Romance'
 )
 m11 = Movie.create( 
     title: 'The Last Airbender',
     image: 'https://m.media-amazon.com/images/I/81WmTJU0i4L._SL1500_.jpg',
     release_date: 2010,
-    rating: nil,
     genre:'Fantasy'
 )
 m12 = Movie.create( 
     title: 'Rubber',
     image: 'https://m.media-amazon.com/images/I/913pPQTeUrL._SY445_.jpg',
     release_date: 2010,
-    rating: nil,
     genre: 'Horror'
 )
 m13 = Movie.create( 
     title: 'Spider-Man: No Way Home',
     image: 'https://image.tmdb.org/t/p/original/9ltcubNi8RaTirTjW0ZAOgmUb9v.jpg',
     release_date: 2021 ,
-    rating: nil,
     genre: 'Action'
 )
 

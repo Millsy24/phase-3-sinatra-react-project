@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2022_08_22_161210) do
     t.string "title"
     t.string "image"
     t.integer "release_date"
-    t.integer "rating"
     t.string "genre"
   end
 
