@@ -23,6 +23,22 @@ class ApplicationController < Sinatra::Base
     users.to_json
   end
   
+  get "/movies/:id" do 
+    movies = Movie.find(params[:id])
+    movies.to_json
+  end
+
+  get "/reviews/:id" do 
+    reviews = Review.find(params[:id])
+    reviews.to_json
+  end
+
+  get "/users/:id" do
+    users = User.find(params[:id])
+    users.to_json
+  end
+
+  
   delete "/movies/:id" do
      movies = Movie.find(params[:id])
      movies.destroy
