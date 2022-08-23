@@ -39,16 +39,16 @@ class ApplicationController < Sinatra::Base
   end
 
   
-  delete "/movies/:id" do
-     movies = Movie.find(params[:id])
+  delete "/reviews/:id" do
+     movies = Review.find(params[:id])
      movies.destroy
      movies.to_json
    end
 
-   post "/movies" do 
-    movie = Movie.create(movie_params)
-    movie.to_json
-
+   post "/reviews" do 
+    movie = Movie.find(params[:id])
+    movie.createReview(params[:rating], params[:comment], params[:name])
+    movie.to_json()
    end
 
    patch '/movies/:id' do
