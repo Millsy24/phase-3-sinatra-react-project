@@ -40,9 +40,9 @@ class ApplicationController < Sinatra::Base
 
   
   delete "/reviews/:id" do
-     movies = Review.find(params[:id])
-     movies.destroy
-     movies.to_json
+     reviews = Review.find(params[:id])
+     reviews.destroy
+     reviews.to_json
    end
 
    post "/reviews" do 
