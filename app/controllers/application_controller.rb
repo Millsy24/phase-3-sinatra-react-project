@@ -47,8 +47,8 @@ class ApplicationController < Sinatra::Base
 
    post "/reviews" do 
     movie = Movie.find(params[:id])
-    movie.createReview(params[:rating], params[:comment], params[:name])
-    movie.to_json()
+    newReview = movie.createReview(params[:rating], params[:comment], params[:name])
+    newReview.to_json({include: :user})
    end
 
    patch '/movies/:id' do
