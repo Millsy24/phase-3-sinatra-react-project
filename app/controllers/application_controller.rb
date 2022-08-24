@@ -40,9 +40,9 @@ class ApplicationController < Sinatra::Base
 
   
   delete "/reviews/:id" do
-     reviews = Review.find(params[:id])
-     reviews.destroy
-     reviews.to_json
+     review = Review.find(params[:id])
+     review.destroy
+     review.to_json
    end
 
    post "/reviews" do 
@@ -51,16 +51,11 @@ class ApplicationController < Sinatra::Base
     newReview.to_json({include: :user})
    end
 
-   patch '/movies/:id' do
-    movies = Movie.find(params[:id])
-    movies.update(movie_params)
-    movies.to_json
-    end
 
     patch '/reviews/:id' do
-      reviews = Review.find(params[:id])
-      reviews.update(review_params)
-      reviews.to_json
+      review = Review.find(params[:id])
+      review.update(params[:comment], params[:rating])
+      review.to_json({include: :user})
     end
 
     def review_params
