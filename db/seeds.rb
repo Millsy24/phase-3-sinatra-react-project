@@ -159,6 +159,10 @@ u2 = User.create(
     name: 'Remberto'
 )
 
+u3 = User.create(
+    name: 'Austin'
+)
+
 
 r1 = Review.create(comment:"I liked this film very much. It is much darker than the previous outings, but not as faithful to the source material. The only thing I didn't like so much about the book, was the subplot about Hermione trying to help house elves. It was cute, but interfered too much with the dark overtones of the narratives. The film looks dazzling, especially the ballroom scene. Speaking of that scene, I adored that dress that Hermione was wearing, Emma Watson looked unrecognisable in that scene.Also the music by Patrick Doyle this time was beautiful." , rating: 5 , user_id: User.ids.sample , movie_id: m1.id)
 
@@ -230,7 +234,7 @@ r27 = Review.create(comment: "This is the best animated film ever made. Each and
 r28 = Review.create(comment: "Of the entire Hobbit trilogy, The Hobbit: An Unexpected Journey is probably the film that expands on the original book the least. This is a fast-paced, epic adventure - once you get past the extended scenes at Bag End. Seriously - they're in Bilbo's house for about half an hour, or at least it seems. 
 Otherwise, this film is pretty awesome. The 'overuse' of CGI that critics complain about isn't really a big deal, and Erebor, the home of the dwarves, looks pretty epic. An Unexpected Journey isn't quite as good as the Lord of the Rings films, but as far as fantasy filming goes, this one is (fairly) close to the top." , rating: 4, user_id: User.ids.sample , movie_id: m2.id)
 
-r29 = Review.create(comment: "Avatar The Last Airbender, an outstanding show, beautiful animation and heartwarming scenes. Even the people who aren't fans of Anime will adore this. I loved the series overall, I especially liked how they didn't go over the top with the animation, changing the perspective of how the animation worked, making it a bit overdramatic. The Last Airbender finally had a movie in 2010. I was very young back then. I never heard of the movie or the show since I preferred something more girly and friendlier. However, the movie was shockingly horrific. It was too action-packed and the audiences of this horrific mess were immediately becoming exhausted, wanting to go home. This fantastic masterpiece did not deserve this movie. As I searched The Last Airbender The Movie, I saw many exhausting and mortifying known-for-being-bad scenes come out of the distance. Many people were asking for a sequel to this hot mess as it could help determine to change the positioning of how bad the first one was. Sadly, I do not think anything could change the perspective of how horrific and despicable from what the directors and actors gave us. A reboot would be pretty nice, if they' decided to make a new movie based off the show, with outstanding actors and heartwarming scenes. Give the movie this show really deserves, but do not whatever you do, do not give The Last Airbender a second chance, it screwed up tremendously and deserves to stay where it is, in the first with truthful reviews. Give the show the amazing movie it deserves.", rating: 1, user_id: u2.id , movie_id: m11.id)
+r29 = Review.create(comment: "Must not watch... M. Night desecrated my childhood and instilled trauma upon me. Will never see another M. Night movie again, even if its Star Wars or Marvel.", rating: 0, user_id: u2.id , movie_id: m11.id)
 
 r30 = Review.create(comment: "Rubber, the cinematic masterpiece involving a homicidal tire named Robert, is a thriller that will have you talking about its deep thematic elements for years to come. The amount of systemic metaphors contained in this film are riveting--from the reflection of how beauty can change the decisions of the powerful to how the modern day American gun violence epidemic is being orchestrated, Rubber does not fail to touch on real-life issues plaguing society. The ending is arguably the best finale one could ever hope for, containing a jaw-dropping plot twist that explores how intergenerational crime perpetuates our streets. Religion is also touched upon during the ending, prompting viewers to think about the afterlife and the injustices of good versus evil. In just under an hour and a half, the film touches on politics, crime, religion, and other complex issues surrounding the human experience--all by following the killer tire. 
 
@@ -302,6 +306,8 @@ The stunning Daphne Zuniga delivers a fiery portrayal of Princess Vespa, and Joh
 With nods to Alien, Planet of the Apes, and Star Trek, Mel has covered all the bases. Every time I see this movie, I laugh until it hurts. 
 
 Thanks for the chuckles, Mel. I think “the Schwartz” will be with us for a very long time." , rating: 5 , user_id: User.ids.sample , movie_id: m21.id,)
+
+r49 = Review.create(comment: "A poorly realized re-imagining of a beloved franchise", rating: 1, user_id: u3.id , movie_id: m11.id)
 
 
 
