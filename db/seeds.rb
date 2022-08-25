@@ -86,7 +86,21 @@ m13 = Movie.create(
     genre: 'Action'
 )
 
-13.times do 
+m14 = Movie.create(
+    title: 'Interstellar',
+    image: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg',
+    release_date: 2014 ,
+    genre: 'Science Fiction')
+
+m15 = Movie.create(
+        title: '1917',
+        image: 'https://i.ytimg.com/vi/VzvdoLeXClg/movieposter_en.jpg',
+        release_date: 2019,
+        genre: 'War'
+    
+    )
+
+15.times do 
     User.create(
         name: Faker::Name.name
         
@@ -172,6 +186,26 @@ r30 = Review.create(comment: "Rubber, the cinematic masterpiece involving a homi
 
     If you are still debating whether to watch it or not, pick up your remote now and press play. You won't regret it.", rating: 5, user_id: User.ids.sample , movie_id: m12.id)
 
+r31 = Review.create(comment: "Christopher Nolan delivers a masterpiece, full of wonder and amazement. The film is about a group of astronauts tasked with finding a new planet for humanity as the earth is becoming inhabitable when a plant disease has ravaged the food sources and a butter factory overflows. 
+Nolan continues to show why he's one of the top directors around, Interstellar is a ground breaking science fiction gem, the vastness of space has always been fascinating to me and this film delivers stunning visuals and cabbages. Mathew McConaughy is excellent as astronaut Jack Cooper, he's constantly snapping pencils without showing any emotion whatsoever, McConaughys acting is great, not once does he talk too loudly nor does he walk too fast, he's very talented.
+Anne Hathoway plays fellow astronaut Brand, daughter of Micheal Caines character who plays scientist professor Brand.
+This is undoubtedly Hathoways best performance in my professional opinion and Caines presence in the film is calm and intelligent for the most part, but gets verbally aggressive and insulting towards a duck in one scene. I enjoyed the concept of time and space that Nolan delivers, a simple explanation is translated to us into laymans terms by Micheal Caines character - 'Time has a direction from past to future, has anyone seen my BLOODY BISCUIT!?'  I could listen to him all day.
+The CGI is spectacular, I watched this at the cinema when it came out and it was just beautiful on the big screen, not entirely sure why they CGI'd Micheal Caines thumbs but it dazzled me nonetheless. 
+The only real downside for me was the score. Composer Hans Zimmer produces monstrous swells of organ music with sounds that can only be described as a typewriter crashing down some stairs that occasionally drown out the dialogue. It's a slight disappointment but I didn't have my usual emotional outburst of kicking my canvas art board down the stairs, instead I placed a slice of ham over my lamp and told myself 'all is ok timmy, all is ok'
+
+Everything is beautifully shot, the cinematography is the best I've seen, it must be a pleasure to work with Nolan, I hear he's a nice guy. My small claim to fame is when I saw him at an airport once and I rolled an orange gently towards his feet, he gave me a nevous smile then walked off. What a guy! 
+Amazing film, if you like 2001 a space Odyssey and The Karate kid you will love this. 
+5 stars." , rating: 4 , user_id: User.ids.sample, movie_id: m14.id)
+
+r32 = Review.create(comment: "Time & space , these are two very important phenomrnon which kept humanity think for thousand of years  about this vast infinite universe and to find out its unapproachable interstellar destinations like solar system ,  milkyway , planets , blackholes ,etc. Highly talented great film maker Christopher  nolan has shown his  top class directorial skills by this great Sci fi saga ' Interstellar'  . Probably its one of the best movie ever made its not only about finding new home for humanity in interstellar destination but its a emotional sci fi drama also a unbreakable relationship between father & daughter which has been portrayed in  memorable manner never before any director been able to do. ", rating: 5 , user_id: User.ids.sample , movie_id: m14.id)
+
+r33 = Review.create(comment: "Too many flaws. Wife and I noticed right away. Must have been a millennial's interpretation of WWI. Production seemed rushed. Could have used a re-write.
+
+We're from Michigan and you can not free a stuck vehicle by spinning the wheels.  Certainly not in mud or snow. That and it seemed to lurch forward after the soldiers pushing it relaxed. Who wrote this?? Some clueless city person?" , rating: 3 , user_id: User.ids.sample , movie_id: m15.id,)
+
+r34= Review.create(comment: "Epic one-shot movie ever. At least it was made in that way to be one big shot which is really amazing. This is the best of all one-shot movies ever made. The whole movie is so intense and so tight. 
+
+Another master piece by Sam Mendes. Sam Mendes and Krysty Wilson-Cairns are the writers. This is the first movie in history to have a female writer for an epic war movie, which is a great thing. Sam Mendes created this story base on his grandfathers tale happened in WW-1.", rating: 5 , user_id: User.ids.sample , movie_id: m15.id,)
 
 
 
