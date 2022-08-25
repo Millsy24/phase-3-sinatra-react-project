@@ -100,13 +100,66 @@ m15 = Movie.create(
     
     )
 
-15.times do 
+m16 = Movie.create(
+        title: 'Saving Private Ryan',
+        image: 'https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg',
+        release_date: 1998,
+        genre: 'War'
+    
+    )
+m17 = Movie.create(
+        title: 'Top Gun: Maverick',
+        image: 'https://m.media-amazon.com/images/M/MV5BOWQwOTA1ZDQtNzk3Yi00ZmVmLWFiZGYtNjdjNThiYjJhNzRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg',
+        release_date: 2022 ,
+        genre: 'Action'
+    
+    )
+m18 = Movie.create(
+        title: 'The Great Gatsby',
+        image: 'https://www.gannett-cdn.com/media/USATODAY/USATODAY/2013/05/07/gatsby-mti-jacket-3_4.jpg?width=534&height=712&fit=crop',
+        release_date: 2013 ,
+        genre: 'Romance'
+    
+    )
+m19 = Movie.create(
+        title: 'Seven' ,
+        image: 'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
+        release_date: 1995,
+        genre: 'Thriller'
+    
+    )
+m20 = Movie.create(
+        title: 'The Bourne Identity',
+        image: 'https://m.media-amazon.com/images/M/MV5BM2JkNGU0ZGMtZjVjNS00NjgyLWEyOWYtZmRmZGQyN2IxZjA2XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg',
+        release_date: 2002,
+        genre: 'Action'
+    
+    )
+m21 = Movie.create(
+    title: 'Spaceballs' ,
+    image: 'https://grandintheatre.com/sites/default/files/styles/500px_wide/public/movie-images/spaceballs_poster_by_eddieholly_ddwwej0-pre.jpg?itok=6SRgSGgz',
+    release_date: 1987,
+    genre: 'Comedy'
+
+)
+
+
+
+21.times do 
     User.create(
         name: Faker::Name.name
-        
-        
     )
 end
+
+u1 = User.create(
+    name: 'Yari' 
+)
+
+u2 = User.create(
+    name: 'Remberto'
+)
+
+
 r1 = Review.create(comment:"I liked this film very much. It is much darker than the previous outings, but not as faithful to the source material. The only thing I didn't like so much about the book, was the subplot about Hermione trying to help house elves. It was cute, but interfered too much with the dark overtones of the narratives. The film looks dazzling, especially the ballroom scene. Speaking of that scene, I adored that dress that Hermione was wearing, Emma Watson looked unrecognisable in that scene.Also the music by Patrick Doyle this time was beautiful." , rating: 5 , user_id: User.ids.sample , movie_id: m1.id)
 
 r2 = Review.create(comment: "After reading JRR Tolkien's incredible Middle Earth classics nearly half a century ago,  I was sure it would never be possible to do these books justice on the movie screen.  Time passes, however, and technical advances have brought imagination to glorious life.  Add in the incredible makeup and costumes, and most of all the commitment to the time required for a FULL depiction from book to screen, and you have a fantastic experience.  The acting is wonderful,  and true to character.   For lovers of the books, this is a must see.", rating: 5 ,  user_id: User.ids.sample , movie_id: m2.id)
@@ -131,7 +184,7 @@ r9 = Review.create(comment: "This is one of the BEST video games movies EVER mad
 
 r10 = Review.create(comment: "Love how all these ratings are saying that this movie is a masterpiece. It's an actual disaster in a dumpster, on fire, in a trainwreck. The acting is horrid and the script is all over the place. Either way, if you want to watch a GOOD movie, don't watch this. But if you want a good laugh, watch it. This made me laugh non-stop and is honestly and brutally hilarious because of how bad it is. I love it.", rating: 4, user_id: User.ids.sample , movie_id: m10.id)
 
-r11 = Review.create(comment: "Avatar The Last Airbender was one of the best shows on Nickelodeon, and it deserved a live action very badly. But, this movie is straight up trash. Everything about this movie is just wrong. I was so excited when the trailer dropped, but was quickly disappointed. First off, this movie was rushed, they tried to fit all of season 1 into a 1 hour movie, which was wrong, Every single scene, you had to constantly remember what happened for these characters to get where they were in the moment. It's especially confusing for people who haven't watch the show (a masterpiece). This movie somehow managed to mispronounce almost every characters name. Aang in this movie is pronounced Ong. Sokka in this movie is pronounced, Sohkah. Iroh in this movie is pronounced Eeroh. Agni Kai in this movie is pronounced Agni Kee. And lastly, Avatar is pronounced AHvahtar. The creators also managed to hire the worst possible actors for these loveable and amazing characters. The only actor in this movie that actually resembled the character is that one moon waterbender princess girl, that Sokka falls for. Speaking of which, what in the what happened to Sokka?? He was so funny in the show, but now he's like.... The complete opposite. Why is Iroh so serious?? They really washed the personality and fun out of these characters. They're really forgettable. For some reason, they don't hide Fire Lord Ozai's identity at all. They just show him, and he just seems like this random guy that's just there for some reason. And can someone tell me why all the different tribes' minority is off? They completely messed up. Don't get me started on the acting. There is a scene in the movie where it takes about ten men to do this practiced choreography dance battle just to move a tiny pebble. Like wh????? Now, the ending. It was so boring. When the movie ends, it feels like the characters got nothing accomplished whatsoever. The producers really thought that they were gonna make a sequel for this. The post credits scene shows Azula, Zuko's psychopathic sister in the show. Again, I don't know what made them think they were gonna make a sequel. Long story short, this adaption was horrible, and I don't recommend wasting more than an hour of your life watching this.", rating: 1, user_id: User.ids.sample , movie_id: m11.id)
+r11 = Review.create(comment: "bruh the show was too good to deserve that monstrosity of a movie", rating: 0, user_id: u1.id , movie_id: m11.id)
 
 r12 = Review.create(comment: "A truly cinematic masterpiece, one of the best films I've ever seen. The way the tire acts with no disregard for human life is nothing short of amazing. sory that was my dad move scaredy me th e tier was so scare i hate tiers i pee  pant
 
@@ -177,7 +230,7 @@ r27 = Review.create(comment: "This is the best animated film ever made. Each and
 r28 = Review.create(comment: "Of the entire Hobbit trilogy, The Hobbit: An Unexpected Journey is probably the film that expands on the original book the least. This is a fast-paced, epic adventure - once you get past the extended scenes at Bag End. Seriously - they're in Bilbo's house for about half an hour, or at least it seems. 
 Otherwise, this film is pretty awesome. The 'overuse' of CGI that critics complain about isn't really a big deal, and Erebor, the home of the dwarves, looks pretty epic. An Unexpected Journey isn't quite as good as the Lord of the Rings films, but as far as fantasy filming goes, this one is (fairly) close to the top." , rating: 4, user_id: User.ids.sample , movie_id: m2.id)
 
-r29 = Review.create(comment: "Avatar The Last Airbender, an outstanding show, beautiful animation and heartwarming scenes. Even the people who aren't fans of Anime will adore this. I loved the series overall, I especially liked how they didn't go over the top with the animation, changing the perspective of how the animation worked, making it a bit overdramatic. The Last Airbender finally had a movie in 2010. I was very young back then. I never heard of the movie or the show since I preferred something more girly and friendlier. However, the movie was shockingly horrific. It was too action-packed and the audiences of this horrific mess were immediately becoming exhausted, wanting to go home. This fantastic masterpiece did not deserve this movie. As I searched The Last Airbender The Movie, I saw many exhausting and mortifying known-for-being-bad scenes come out of the distance. Many people were asking for a sequel to this hot mess as it could help determine to change the positioning of how bad the first one was. Sadly, I do not think anything could change the perspective of how horrific and despicable from what the directors and actors gave us. A reboot would be pretty nice, if they' decided to make a new movie based off the show, with outstanding actors and heartwarming scenes. Give the movie this show really deserves, but do not whatever you do, do not give The Last Airbender a second chance, it screwed up tremendously and deserves to stay where it is, in the first with truthful reviews. Give the show the amazing movie it deserves.", rating: 1, user_id: User.ids.sample , movie_id: m11.id)
+r29 = Review.create(comment: "Avatar The Last Airbender, an outstanding show, beautiful animation and heartwarming scenes. Even the people who aren't fans of Anime will adore this. I loved the series overall, I especially liked how they didn't go over the top with the animation, changing the perspective of how the animation worked, making it a bit overdramatic. The Last Airbender finally had a movie in 2010. I was very young back then. I never heard of the movie or the show since I preferred something more girly and friendlier. However, the movie was shockingly horrific. It was too action-packed and the audiences of this horrific mess were immediately becoming exhausted, wanting to go home. This fantastic masterpiece did not deserve this movie. As I searched The Last Airbender The Movie, I saw many exhausting and mortifying known-for-being-bad scenes come out of the distance. Many people were asking for a sequel to this hot mess as it could help determine to change the positioning of how bad the first one was. Sadly, I do not think anything could change the perspective of how horrific and despicable from what the directors and actors gave us. A reboot would be pretty nice, if they' decided to make a new movie based off the show, with outstanding actors and heartwarming scenes. Give the movie this show really deserves, but do not whatever you do, do not give The Last Airbender a second chance, it screwed up tremendously and deserves to stay where it is, in the first with truthful reviews. Give the show the amazing movie it deserves.", rating: 1, user_id: u2.id , movie_id: m11.id)
 
 r30 = Review.create(comment: "Rubber, the cinematic masterpiece involving a homicidal tire named Robert, is a thriller that will have you talking about its deep thematic elements for years to come. The amount of systemic metaphors contained in this film are riveting--from the reflection of how beauty can change the decisions of the powerful to how the modern day American gun violence epidemic is being orchestrated, Rubber does not fail to touch on real-life issues plaguing society. The ending is arguably the best finale one could ever hope for, containing a jaw-dropping plot twist that explores how intergenerational crime perpetuates our streets. Religion is also touched upon during the ending, prompting viewers to think about the afterlife and the injustices of good versus evil. In just under an hour and a half, the film touches on politics, crime, religion, and other complex issues surrounding the human experience--all by following the killer tire. 
 
@@ -203,6 +256,53 @@ We're from Michigan and you can not free a stuck vehicle by spinning the wheels.
 r34= Review.create(comment: "Epic one-shot movie ever. At least it was made in that way to be one big shot which is really amazing. This is the best of all one-shot movies ever made. The whole movie is so intense and so tight. 
 
 Another master piece by Sam Mendes. Sam Mendes and Krysty Wilson-Cairns are the writers. This is the first movie in history to have a female writer for an epic war movie, which is a great thing. Sam Mendes created this story base on his grandfathers tale happened in WW-1.", rating: 5 , user_id: User.ids.sample , movie_id: m15.id,)
+
+r35 = Review.create(comment: "Saving Private Ryan is a bad war movie and a bad movie. There are a lot of problems with Spielberg's film no one cares about because of the first 10-15 minutes of it. That scene really was masterful in every way possible, but it does not save the whole movie from being stupid, dull and shallow. " , rating: 2 , user_id: User.ids.sample , movie_id: m16.id,)
+
+r36 = Review.create(comment: "According to me when I watched this movie I realized that one can even like a movie whose genre is completely different from the types of the movie which are made today especially science fiction, action drama, psycho-thriller, adventures, comedy, etc(these are also my personal favorites because I belong to this present generation). But this piece of art when you compare to all the other movies Starrer Tom Hanks especially Green Mile which I watched during my college days are real gems of the Hollywood movies and movies such as Forrest Gump which is rated by many movie rating agencies as one of the finest pieces of art be it be acting-wise, storytelling or direction wise and various other factors which a movie can be judged it won't give you cinematic experience that science fiction movie provides but it can give you an experience of Lifetime.", rating: 4 , user_id: User.ids.sample , movie_id: m16.id,)
+
+r37 = Review.create(comment: "Steven Spielberg is the master of World War genre and he made one of the best films that includes Schindler's List but no movie can beat Saving Private Ryan in WW2 genre as this is the best movie ever made in this genre. That includes spectacular Cinematography, splendid Screenplay, great Soundtrack and brilliant performance by Tom Hanks and other supporting cast.
+Saving Private Ryan is movie about a captain (Tom Hanks) who has been assigned a difficult mission in the middle of WW2 to rescue the James Francis Ryan(Matt Damon) one of the last surviving of Ryan's brothers." , rating: 5 , user_id: User.ids.sample , movie_id: m16.id,)
+
+
+r38 = Review.create(comment: "(There are a few minor spoilers here, be cautious.) This movie was just incredible. It was one of the best movies I've ever seen in my life. It felt so good, like it was just absolutely perfect as it is, and nothing should be changed. Yes, it was that amazing to me. For starters, the story was really fun and it was full of just the right amount of humor that was funny, and NEVER cringey. The story is a fun tale of pilots trying to improve themselves and be the best they can to achieve a near-impossible mission. It was flawlessly paced and I cant remember any boring moments. The few moments that I guess could be considered 'boring' were short enough. And even if there were some slightly tedious moments here and there, it more than makes up for them with long, entertaining moments of suspense, excitement, awe, and emotion. The movie is about pilots flying fighter jets, and the scenes of them flying had me in vast awe and admiration. They were some of the most beautiful and immersive moments I've ever had. The scenes had top tier cinematography and gave me some of the craziest angle shots I've ever witnessed. The cameras, for example, are always aimed in crazy angles during the flight scenes, and the camera often moves with you at the speed of the jets themselves, making you almost feel like your actually there, flying with the plane. The cinematography is phenomenal, I cant explain it properly, you'll have to watch the movie to know what I'm talking about. There were so many emotions this movie mad me feel. I felt heartwarming in some scenes, awesome immersive feelings in some scenes (mostly the plane scenes). I felt suspense and intensity at times. I felt a HUGE sense of pride and victory at one point that was one of the most satisfying moments in cinema for me. This movie just made me feel so much watching it, it's just incredible. The characters are one of the more interesting parts of the movie. I loved seeing how they developed and grew to work together, with characters becoming closer and closer to both each other, and their goal over the course of the movie. There was a real sense of teamwork and unity among the main cast, and it was a fantastic feeling to see them achieve their victory through teamwork and communication, inspiring each others, saving each other, it was so touching. I could go on a lot longer, praising this movie, but I'm just about ready to end it here. It's just Such a high-quality and entertaining movie, I really loved it. 100% must watch!! This easily deserves 5 stars." , rating: 5 , user_id: User.ids.sample , movie_id: m17.id,)
+
+r39 = Review.create(comment: "I saw this movie in 4DX today and can I just say that I had the ride of my life it was amazing every time they were flying the planes your seat kept moving everywhere I mean what a amazing experience. And as for the movie itself it is just amazing to see
+Tom Cruise AKA Maverick back in the flying seat. It was spectacular their is plenty of action in it and Humour too and it was also abit emotional too but I'm not giving you any spoilers but their are some really emotional bits in the movie. The Movie also has a really good story to it and it is just interesting to see how all of the other younger pilots react to Maverick being their captain and how they all end up respecting him and just how all of the relationships progress.
+
+
+Tom Cruise is amazing as Maverick of course and you have Miles Teller in the movie who has plays Goose's Son who is called Bradley AKA Rooster. And it's really interesting to see what the relationship is like between Maverick and Rooster especially because of what happens to Rooster's Dad that is so sad but yeah it's interesting to see how their relationship develops. Also I loved Phoenix in the movie it's nice to see a woman flying the plane and see is quite hot. 
+
+So yeah plenty of action and plenty of good actors and actresses and it's just a amazing movie and I do recommend watching the original Top Gun before you see this new one because I watched the original for my first time a few days ago and I am glad I did because it helped me to understand this new movie so much better and it helped me understand who Goose was and who Iceman and all the other characters are too. So yeah I definitely recommend watching the original first. And I would say that this new Top Gun movie easily lives up to the original in every way.
+
+So yeah overall I definitely recommend that you go and watch this movie because it is just amazing and go and watch it in 4DX if you can because it just adds so much more thrills and excitement to the experience." , rating: 5 , user_id: User.ids.sample , movie_id: m17.id,)
+
+r40 = Review.create(comment: "The Great Gatsby is not even a real person.  Just came from someones imagination.  Gatsby dies in the stupidest way, has no security guards in his massive millionaire/billionaire castle.  A guy with a gun just walks into his castle and kills him easily.  No one cares about Gatsby after death except for narrator.  The reason why the narrator is in a mental institution isn't clear at all.  The movie seems to be going somewhere great and genius at the beginning but...  No." , rating: 1 , user_id: User.ids.sample , movie_id: m18.id,)
+
+r41 = Review.create(comment: "This films works well because of the two factors first Fitzgerald's iconic story and the other Leonardo DiCaprio. LDC is impressive to watch and the extravagant party scenes are way more stunning. The only complaint I have with the film is may be in the presentation of the story. The screenplay and direction looked quite weak. I personally feel it would be bit difficult to get the essence of this film if you haven't read the book because the films lacks in the clarity somewhere." , rating: 3 , user_id: User.ids.sample , movie_id: m18.id,)
+
+r42 = Review.create(comment: "I became familiar with the works of F. Scott Fitzgerald back in high school when for my literature assignment I had to read 'Winter Dreams', I enjoyed it but have never read the book that made him famous--good thing this exists. This is one of my favorite book adaptation out there...though not my favorite period in American history, this movie made the roaring 20s looks out of this world and the soundtrack only serves to make it even more opulent. The whole movie just feels like luxury, and the characters are so interesting. i felt so bad for Gatsby by the end of the movie and could relate to Nick wholeheartedly. Edgerton played his part very well because Tom's face was looking more and more punchable throughout this movie. Oh, how i would have loved to be a fly on the wall or flowers in a vase during the scene at that hotel with Daisy, Tom, Nick, and Jordan, just to feel the tension in the room. Dare i say this maybe the best Leonardo Dicaprio performance ever? Even surpassing Titanic and Inception? Amazing movie...this deserved a best movie Oscar." , rating: 5 , user_id: User.ids.sample , movie_id: m18.id,)
+
+r43 = Review.create(comment: "From David Fincher, Se7en is a compelling and brilliant postmodern film noir. It is grim and disturbing but it is also very intelligent and daring. What I did love about Se7en especially is that it is incredibly stylish, beautiful dark cinematography and dazzling landscapes really do add to the atmosphere. Very little of the murders are shown but we are appalled and shocked by what we hear of them, the action is tense and the climax is shattering. There is also an intelligent screenplay, a clever plot telling of a vicious serial killer who murders his victims in a gruesome way to atone for the sins(gluttony, greed, sloth, lust, pride, envy and wrath)he deems them to have committed and excellent direction. The acting is also superb, Morgan Freeman gives another brilliant performance as the disillusioned detective and Brad Pitt is great as Mills in a more meatier role than he has ever done. Gwyneth Paltrow makes a small yet significant appearance as Mill's uneasy wife, while Kevin Spacey superbly delivers equally superb dialogue as John Doe despite the fact he isn't in the film much. Overall, a brilliant film, with adept performances, direction, style and ambition. 10/10 Bethany Cox", rating: 5 , user_id: User.ids.sample , movie_id: m19.id,)
+
+r44 = Review.create(comment: "It is just so dark and musty through the whole movie. I don't know if that was by design but I hated it. It is dry and you can't see what's going on. Nothing in this movie is great, except Morgan Freeman(because he's always great), and one of the biggest movie lines ever came out of this movie. I honestly don't understand what the big deal is. It wasn't a good movie at all. The movie moves at a ridiculously slow pace and there is nothing in it that would make me want to watch it again.", rating: 2 , user_id: User.ids.sample , movie_id: m19.id,)
+
+r45 = Review.create(comment: "The best thing about this film is that it is an action film but its story is completely logical and memorable like John Wick. Jason Bourne  who lost his memory and started thinking him as an assassin finally finds out that he is an U.S. F.B.I agent. He also fell in love with a girl name is maybe Marylin ( I can't remember) who helped him when Bourne didn't knew who he is. The fighting scene in that French hotel, the first fighting scene, when Wombosi got shot, Bourne injured the man who was trying to kill him with a ball pen like John Wick killed 3 persons with a pencil, and each and every action scenes are the heart of this film. What makes this thriller so amazing is Damon's ability to merge the physical with the emotional. He's strong, skilled, and smart, but he's also generous and also honesty and intelligence. And the way he ran from that bank thing or whatever when F.B.I agents were trying to catch him was also amazing." , rating: 5 , user_id: User.ids.sample , movie_id: m20.id,)
+
+r46 = Review.create(comment: "This movie has everything - Matt Damon, perfect as a good looking young man suffering from amnesia, trying to find out his true identity while being pursued by assassins. Great action with car chase scenes through the streets of Paris and lots of choreographed fight sequences. Then to top it all off, a sensuous European style actress to play the love interest. Add to all of this an undercurrent of mysterious and nefarious CIA style business dealings. The twist of plot at the end will leave you wanting more of Jason Bourne!" , rating: 5 , user_id: User.ids.sample , movie_id: m20.id,)
+
+r47 = Review.create(comment: "The film hasn't aged well sadly. I had seen it before, two decades ago on TV, and I remember thinking it was pretty funny when I was 12! The jokes arn't that smart and induced groans most of the time during my recent watch through but there was a few which got me chuckling such as the names of the differing ship speeds.  The special effects look exactly like the original Star Wars trilogy so in that respect, it was pretty good. Pizza the Hutt was the best looking character with all the salami and cheese dripping off his head and body - he looked effectivly disgusting even though he was a character who's name I groaned at. The film is mainly a parody of Star Wars but it also has jokes about Star Trek, Alien, The Wizard of Oz, Planet of the Apes and even Transformers but as mentioned before, the jokes vary in quality quite a bit.  Favourite scene was the 'Swartz'  battle between Lone Star and Dark Helmet - had some funny dialogue.
+
+Final Verdict: Mel Brooks' didn't quite hit the mark with Spaceballs but it has a few genuine laughs amongst the groan enducing jokes.  The jokes haven't aged well and I was quite disappointed by the end. Ric Moranis is certainly the standout however as Dark Helmet, funniest character in the film!" , rating: 3 , user_id: User.ids.sample , movie_id: m21.id,)
+
+r48 = Review.create(comment: "Mel Brooks is at his wackiest best in this clever Star Wars spoof. Leave it to Mel to come up with names like “Snotty”, “Barf” and, my favorite, “Yogurt”. 
+
+The stunning Daphne Zuniga delivers a fiery portrayal of Princess Vespa, and John Candy’s good-natured antics as Barf are endearing and lovable. Great casting all the way around. 
+
+With nods to Alien, Planet of the Apes, and Star Trek, Mel has covered all the bases. Every time I see this movie, I laugh until it hurts. 
+
+Thanks for the chuckles, Mel. I think “the Schwartz” will be with us for a very long time." , rating: 5 , user_id: User.ids.sample , movie_id: m21.id,)
+
 
 
 
