@@ -11,3 +11,15 @@ D - Delete
 While allowing our frontend developers to create and use CRUD actions, we also want to create a local API with Active Record and Sinatra.
 
 We want our frontend developers to manipulate and append the title, rating, release date, and genre of the movie!
+
+
+Domain Mode:
+
+Movie ----<review> ---- User
+
+A movie has many reviews
+A movie has many users, through reviews
+A user has many reviews
+A user has many movies, through reviews
+A review belongs to a movie
+A review belongs to a user
