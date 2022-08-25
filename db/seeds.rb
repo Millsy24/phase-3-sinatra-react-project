@@ -15,7 +15,7 @@ m1 = Movie.create(
 )
 m2 = Movie.create( 
     title: 'The Hobbit',
-    image: 'https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/86974/86527/the_hobbit_the_desolution_of_smaug__final_poster_buy_original_movie_posters_at_starstills__35272__21743.1394515789.jpg?c=2?imbypass=on',
+    image: 'https://i.ebayimg.com/thumbs/images/g/biIAAOSwqDdiQ50V/s-l1600.jpg',
     release_date: 2012 ,
     genre: 'Fantasy'
 )
