@@ -15,7 +15,7 @@ We want our frontend developers to manipulate and append the title, rating, rele
 
 Domain Mode:
 
-Movie ----<review> ---- User
+Movie -----Review----- User
 
 A movie has many reviews
 A movie has many users, through reviews
